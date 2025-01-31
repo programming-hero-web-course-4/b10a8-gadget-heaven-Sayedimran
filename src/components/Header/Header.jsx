@@ -8,7 +8,7 @@ import { useContext } from "react";
 
 const Header = () => {
   const obj = useContext (CartContext )
-  console.log(obj);
+  
   
     const {productId} = obj 
   return (

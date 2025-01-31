@@ -4,7 +4,6 @@ import { useContext } from "react";
 
 const Dashboard = () => {
      const obj = useContext (CartContext )
-     console.log(obj);
      
        
     const {productId} = obj
@@ -21,8 +20,13 @@ const Dashboard = () => {
         <p>
         Explore the latest gadgets that will take your experience to <br/> the next level. From smart devices to the coolest accessories, we have it all!
         </p>
+
+         <div className="mt-8" >
+             <button className="btn btn-primary rounded-3xl btn-ghost border border-white text-white mx-5">Cart</button>
+             <button className="btn btn-primary rounded-3xl btn-ghost border border-white text-white">Wishlist</button>
+         </div>
       </div>
-               <h1>ki bipod</h1>
+              
        <div>
           <div className="border border-gray-200 rounded-xl mt-6 mx-16 p-3">
               <div className="flex flex-row gap-12 items-center">
